@@ -208,7 +208,7 @@ CREATE TABLE [dbo].[Camioneras](
 	[CamionerasId] [int] NOT NULL,
 	[Nombre] [varchar](30) NOT NULL,
 	[Motor] [varchar](10) NULL,
-	[Año] [int] NULL,
+	[AÃ±o] [int] NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[CamionerasId] ASC
@@ -384,8 +384,8 @@ INSERT [dbo].[Boleto] ([NumFolio], [ViajeId], [ClienteId], [PagoId]) VALUES (N'C
 INSERT [dbo].[Boleto] ([NumFolio], [ViajeId], [ClienteId], [PagoId]) VALUES (N'D36B0898-AEA4-4B76-9A5E-612B984EF1E6', 1, 4, N'49CBABEF-EB2C-41FF-A8DC-E387AB6A77DB')
 INSERT [dbo].[Boleto] ([NumFolio], [ViajeId], [ClienteId], [PagoId]) VALUES (N'F4A8D248-EAD0-4CFA-8675-F7BE0C5EE75E', 1, 3, N'3F4B3041-F37D-4D67-8A32-067035DB4B8B')
 INSERT [dbo].[Boleto] ([NumFolio], [ViajeId], [ClienteId], [PagoId]) VALUES (N'FB07519F-E33C-4F2E-9AC7-25093440F9E7', 1, 2, N'2DB14D12-4755-4499-99CE-B96E0B642137')
-INSERT [dbo].[Camioneras] ([CamionerasId], [Nombre], [Motor], [Año]) VALUES (2404, N'Transportes del Norte', N'Diesel', NULL)
-INSERT [dbo].[Camioneras] ([CamionerasId], [Nombre], [Motor], [Año]) VALUES (5308, N'Turimex Internacional', N'Diesel', NULL)
+INSERT [dbo].[Camioneras] ([CamionerasId], [Nombre], [Motor], [AÃ±o]) VALUES (2404, N'Transportes del Norte', N'Diesel', NULL)
+INSERT [dbo].[Camioneras] ([CamionerasId], [Nombre], [Motor], [AÃ±o]) VALUES (5308, N'Turimex Internacional', N'Diesel', NULL)
 INSERT [dbo].[Empleados] ([EmpleadoId], [Nombre], [Apellidos], [Edad], [Sexo]) VALUES (3, N'Eliseo', N'Rodriguez Rodriguez', N'42', N'M')
 INSERT [dbo].[Empleados] ([EmpleadoId], [Nombre], [Apellidos], [Edad], [Sexo]) VALUES (4, N'Alan David', N'Martinez Melchor', N'30', N'M')
 INSERT [dbo].[Empleados] ([EmpleadoId], [Nombre], [Apellidos], [Edad], [Sexo]) VALUES (5, N'Galileo', N'Galilei', N'40', N'M')
@@ -411,13 +411,13 @@ INSERT [dbo].[Pago] ([PagoId], [TipoId], [MonedaId], [Fecha]) VALUES (N'A18CC9A4
 INSERT [dbo].[Pago] ([PagoId], [TipoId], [MonedaId], [Fecha]) VALUES (N'AEEEA714-FEBE-4A69-8729-0CB09D23D13B', 2, 840, CAST(N'2018-09-29 02:56:23.577' AS DateTime))
 INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (1, N'Juan', N'Rodriguez Rodriguez', N'Adulto', NULL, N'juanRR@yahoo.com')
 INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (2, N'Antonio', N'Banderas', N'Adulto', 81173456, NULL)
-INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (3, N'Oscar', N'Perez Martinez', N'Niño', 81175975, N'gamer_pro123@gamil.com')
+INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (3, N'Oscar', N'Perez Martinez', N'NiÃ±o', 81175975, N'gamer_pro123@gamil.com')
 INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (4, N'Jose Juan', N'Flores Caballero', N'Adulto', 81196684, N'JJFlores.99@hotmail.com')
-INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (5, N'Alfonso', N'Gutierrez', N'Niño', NULL, NULL)
+INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (5, N'Alfonso', N'Gutierrez', N'NiÃ±o', NULL, NULL)
 INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (6, N'Roberto', N'Melchor Alvarado', N'Adulto', 81135952, N'Melchor.77@outlook.es')
 INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (7, N'Cristobal', N'Colon', N'Adulto', 81199999, N'america.99@uanl.mx')
 INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (8, N'Miguel', N'Salazar', N'Adulto', 81167548, N'miguel_r4@capcom.com')
-INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (9, N'Jose Miguel', N'Salazar', N'Niño', 81167548, NULL)
+INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (9, N'Jose Miguel', N'Salazar', N'NiÃ±o', 81167548, NULL)
 INSERT [dbo].[Pasajero] ([PasajeroId], [Nombre], [Apellidos], [TipoPasajero], [Telefono], [Correo]) VALUES (10, N'Heriberto', N'Contreras Maldonado', N'Adulto', 81145790, N'sectec.80@cisco.com')
 INSERT [dbo].[PuestoEmpleados] ([EmpleadoId], [Puesto]) VALUES (3, N'Limpieza')
 INSERT [dbo].[PuestoEmpleados] ([EmpleadoId], [Puesto]) VALUES (4, N'Contaduria')
